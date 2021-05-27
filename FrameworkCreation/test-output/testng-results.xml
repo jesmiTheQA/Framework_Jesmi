@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-27T15:28:11 IST" name="Default suite" finished-at="2021-05-27T15:28:29 IST" duration-ms="18743">
+    <groups>
+    </groups>
+    <test started-at="2021-05-27T15:28:11 IST" name="Default test" finished-at="2021-05-27T15:28:29 IST" duration-ms="18743">
+      <class name="com.learning.testcases.LoginCRMTestcase">
+        <test-method is-config="true" signature="seupSuite()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-27T15:28:10 IST" name="seupSuite" finished-at="2021-05-27T15:28:11 IST" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seupSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-27T15:28:11 IST" name="setUp" finished-at="2021-05-27T15:28:13 IST" duration-ms="2476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginApp()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-27T15:28:13 IST" name="loginApp" finished-at="2021-05-27T15:28:26 IST" duration-ms="12490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-27T15:28:26 IST" name="tearDownMethod" finished-at="2021-05-27T15:28:27 IST" duration-ms="929" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginCRMTestcase.loginApp()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-27T15:28:27 IST" name="tearDown" finished-at="2021-05-27T15:28:29 IST" duration-ms="2804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.learning.testcases.LoginCRMTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
