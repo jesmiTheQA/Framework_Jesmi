@@ -26,6 +26,7 @@ public class LoginCRMTestcase extends BaseClass {
 			loginPage.CRMLogin(excel.getStringData("CRM_1", 0, 0), excel.getStringData("CRM_1", 0, 1));
 			logger.pass("Login success");
 			helper.captureScreenshots(driver);
+			
 
 		} catch (Exception e) {
 			System.out.println("Error is from class:LoginCRMTestcase and Method:loginApp() - " + e.toString());
