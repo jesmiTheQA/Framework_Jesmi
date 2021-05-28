@@ -20,6 +20,7 @@ public class LoginCRMTestcase extends BaseClass {
 	public void loginApp() throws InterruptedException {
 		try {
 
+			//added
 			logger = report.createTest("CRM Login");
 			LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 			logger.info("Starting the application");
