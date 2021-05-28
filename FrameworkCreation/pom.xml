@@ -15,6 +15,7 @@
 		<appachepoi.version>4.1.2</appachepoi.version>
 		<appachepoi-ooxml.version>4.1.2</appachepoi-ooxml.version>
 		<extentreport.version>4.0.9</extentreport.version>
+		<mavenplugins.version>3.0.0-M5</mavenplugins.version>
 
 	</properties>
 
@@ -59,6 +60,27 @@
 
 
 	</dependencies>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${mavenplugins.version}</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+					
+					<systemPropertyVariables>
+					<executionBrowser>${browser}</executionBrowser>
+					<appUrl>${urlToBeTested}</appUrl>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
 
 
 </project>
