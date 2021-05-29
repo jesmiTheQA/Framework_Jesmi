@@ -1,3 +1,1 @@
-
-
 Here programing language used is Java & used Hybrid frame work. For Test cases , a design pattern required, for that POM(Page Object Model) is used.
