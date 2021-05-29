@@ -47,11 +47,14 @@ public class BaseClass {
 	@Parameters({ "browser", "urlToBeTested" }) // Here value will be get from maven and this value is provided to below
 												// variables
 	@BeforeClass
-	public void setUp(String browser, String url) {
-		// driver = BrowserFactory.startApplication(driver, config.getBrowser(),
-		// config.getStagingURL()); //Here browser & url is taking from
-		// config.properties
-		driver = BrowserFactory.startApplication(driver, browser, url); // here values are taking from POM.xml
+	// public void setUp(String browser, String url) { this one is using to get data from parametrs added in POM.xml
+	public void setUp() {
+		driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getStagingURL()); // Here browser &
+																										// url is taking
+																										// from
+																										// config.properties
+		// driver = BrowserFactory.startApplication(driver, browser, url); // here
+		// values are taking from POM.xml
 	}
 
 //	@BeforeClass
@@ -67,9 +70,9 @@ public class BaseClass {
 
 	@AfterMethod
 	public void tearDownMethod(ITestResult result) {
-		System.out.println("fsdfsd1");
+
+		System.out.println("Result: " + result.getStatus());
 		if (result.getStatus() == ITestResult.FAILURE) {
-			System.out.println("fsdfsd2");
 			helper.captureScreenshots(driver);
 			try {
 				logger.fail("Test Failed",
@@ -78,7 +81,6 @@ public class BaseClass {
 				System.out.println("Sorry..!Not able to add screenshot to Report");
 			}
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			System.out.println("fsdfsd3");
 			helper.captureScreenshots(driver);
 			try {
 				logger.pass("Test Passed",
@@ -87,7 +89,6 @@ public class BaseClass {
 				System.out.println("Sorry..!Not able to add screenshot to Report");
 			}
 		} else if (result.getStatus() == ITestResult.SKIP) {
-			System.out.println("fsdfsd4");
 			helper.captureScreenshots(driver);
 			try {
 				logger.skip("Test skiped",

@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="TestLogin">
     <classes>
+  
+    
       <class name="com.learning.testcases.LoginCRMTestcase"/>
+   
+       <class name="com.learning.testcases.DetailsPageTestCase"/>
     </classes>
   </test> <!-- TestLogin -->
 </suite> <!-- Suite -->
