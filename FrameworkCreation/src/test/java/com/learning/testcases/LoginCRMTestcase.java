@@ -2,10 +2,12 @@ package com.learning.testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.beust.jcommander.internal.Console;
 import com.learning.pages.BaseClass;
 import com.learning.pages.LoginPage;
@@ -24,8 +26,17 @@ public class LoginCRMTestcase extends BaseClass {
 			LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 			logger.info("Starting the application");
 			loginPage.CRMLogin(excel.getStringData("CRM_1", 0, 0), excel.getStringData("CRM_1", 0, 1));
-			logger.pass("Login success");
 			helper.captureScreenshots(driver);
+			if(driver.getTitle().equals(excel.getStringData("CRM_1", 0, 2)))  {
+				logger.pass("Login success");
+				helper.captureScreenshots(driver);
+				
+			}
+			else {
+				logger.fail("Login unsuccess");
+				helper.captureScreenshots(driver);
+			}
+		
 
 		} catch (Exception e) {
 			System.out.println("Error is from class:LoginCRMTestcase and Method:loginApp() - " + e.toString());

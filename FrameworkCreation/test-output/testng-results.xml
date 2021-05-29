@@ -1,40 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-28T13:48:09 IST" name="Default suite" finished-at="2021-05-28T13:48:19 IST" duration-ms="10439">
+  <suite started-at="2021-05-28T19:14:09 IST" name="Suite" finished-at="2021-05-28T19:14:09 IST" duration-ms="82">
     <groups>
     </groups>
-    <test started-at="2021-05-28T13:48:09 IST" name="Default test" finished-at="2021-05-28T13:48:19 IST" duration-ms="10439">
+    <test started-at="2021-05-28T19:14:09 IST" name="TestLogin" finished-at="2021-05-28T19:14:09 IST" duration-ms="82">
       <class name="com.learning.testcases.LoginCRMTestcase">
-        <test-method is-config="true" signature="seupSuite()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T13:48:08 IST" name="seupSuite" finished-at="2021-05-28T13:48:09 IST" duration-ms="936" status="PASS">
+        <test-method is-config="true" signature="seupSuite()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T19:14:08 IST" name="seupSuite" finished-at="2021-05-28T19:14:09 IST" duration-ms="984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seupSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T13:48:09 IST" name="setUp" finished-at="2021-05-28T13:48:11 IST" duration-ms="2350" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T19:14:09 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622209449598" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginApp()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T13:48:11 IST" name="loginApp" finished-at="2021-05-28T13:48:16 IST" duration-ms="4712" status="PASS">
+        <test-method signature="loginApp()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T19:14:09 IST" name="loginApp" finished-at="2021-05-28T19:14:09 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T13:48:16 IST" name="tearDownMethod" finished-at="2021-05-28T13:48:17 IST" duration-ms="754" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginCRMTestcase.loginApp()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T19:14:09 IST" name="tearDownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622209449654" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T13:48:17 IST" name="tearDown" finished-at="2021-05-28T13:48:19 IST" duration-ms="2575" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learning.testcases.LoginCRMTestcase@2e1d27ba]" started-at="2021-05-28T19:14:09 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622209449658" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.learning.testcases.LoginCRMTestcase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TestLogin -->
+  </suite> <!-- Suite -->
 </testng-results>
